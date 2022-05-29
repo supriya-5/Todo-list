@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    
+</head>
+<body>
+   
+    <div class="container">
+        <div class="TasksList" style="color: white;">
+            <b>Tasks</b>&nbsp;List
+        </div>
+
+        <div class="addList">
+            <a href="#" id="alist"><i class="fa-solid fa-circle-plus" onclick="addpopup()"></i></a>
+            <label class="l">Add List</label>
+        </div>
+        
+        <div class="items">
+           <span id="empty"> No Items in the todo list </span>
+        </div>  
+    </div>
+    <div id="cards">
+        <div id="card"> 
+        </div>
+    </div>
+
+<div id="container2">
+    <div id="popup" style="display: none;">
+        <div id="addl">  
+            <div id="add">
+                <h4>Add New List</h4>
+                <input type="text" name="addlist" id="cardname"><br>
+                <button onclick="addCard()" id="submit">  ADD  </button>
+                <input type="button" id="close" value="Close" onclick="closepopup()">
+            </div>
+        </div>
+    </div>
+    <div id="popup2" style="display: none;">
+        <div id="addl">  
+            <div id="add">
+                <h4>Add New Items</h4>
+                <input type="text" name="addinfo" id="cardInfo"><br>
+    
+                <button onclick="addData()" id="submit2">  ADD  </button>
+                <input type="button" id="close2" value="Close" onclick="closepopup2()">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
